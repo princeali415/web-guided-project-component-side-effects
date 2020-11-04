@@ -8,7 +8,7 @@ export default function Details(props) {
 
   // TASK 4 - Create a side effect 🥇 that runs only after first render.
 
-  useEffect();
+  useEffect(() => {}, []);
 
   // TASK 5 - Create a side effect 👻 that runs only after first render
   // and puts a 'click' event handler on document.
