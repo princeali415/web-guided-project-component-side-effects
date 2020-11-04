@@ -20,7 +20,7 @@ export default function Details(props) {
   useEffect(() => {
     console.log("👻 adding silly listener");
     const sillyClickHandler = (evt) => {
-      console.log(`Here's a random number: ${Math.random()}`);
+      // console.log(`Here's a random number: ${Math.random()}`);
     };
     document.addEventListener("click", sillyClickHandler);
     return () => {
@@ -32,7 +32,9 @@ export default function Details(props) {
   // TASK 6 - Create a side effect 🥵 that runs after every render.
   useEffect(() => {
     console.log("effect after every DOM surgery");
-    // return
+    return () => {
+      console.log("cleanup of previous DOM surgery");
+    };
   });
 
   // TASK 7 - Create a side effect 📲 that runs when a particular variable changes:
