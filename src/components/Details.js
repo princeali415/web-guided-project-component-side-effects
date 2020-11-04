@@ -30,6 +30,7 @@ export default function Details(props) {
   }, []);
 
   // TASK 6 - Create a side effect 🥵 that runs after every render.
+  useEffect(() => )
 
   // TASK 7 - Create a side effect 📲 that runs when a particular variable changes:
   // Whenever props.friendId updates we should trigger a fetch for details of the friend.
