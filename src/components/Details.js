@@ -18,9 +18,9 @@ export default function Details(props) {
   // See what happens if we don't clean up.
 
   useEffect(() => {
+    console.log("👻 adding silly listener");
     const sillyClickHandler = (evt) => {
-      // console.log(`Here's a random number: ${Math.random()}`);
-      console.log('adding listener')
+      console.log(`Here's a random number: ${Math.random()}`);
     };
     document.addEventListener("click", sillyClickHandler);
     return () => {
