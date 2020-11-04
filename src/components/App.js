@@ -1,3 +1,4 @@
+import Axios from 'axios'
 import React, { useState } from 'react'
 // TASK 1 - import the axios lib from node_modules
 
@@ -8,6 +9,8 @@ import Details from './Details'
 export default function App() {
   const [friends, setFriends] = useState([])
   const [currentFriendId, setCurrentFriendId] = useState(null)
+
+  Axios.get(url)
 
   const openDetails = id => {
     setCurrentFriendId(id)
