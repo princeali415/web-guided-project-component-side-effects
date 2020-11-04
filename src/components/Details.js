@@ -19,9 +19,9 @@ export default function Details(props) {
 
   useEffect(() => {
     const sillyClickHandler = (evt) => {
-      console.log(`Here's a random number: ${Math.randon()}`);
+      console.log(`Here's a random number: ${Math.random()}`);
     };
-    document.addEventListener
+    document.addEventListener("click", sillyClickHandler);
   }, []);
 
   // TASK 6 - Create a side effect 🥵 that runs after every render.
