@@ -42,6 +42,10 @@ export default function Details(props) {
   // The URL should end up looking like `http://localhost:4000/friends/1?api_key=xyz`
   // On success, shove the details of the friend in `details` slice of state
 
+  useEffect(() => {
+
+  }, [])
+
   return (
     <div className="container">
       <h2>Details (of friend with id {friendId}):</h2>
