@@ -43,8 +43,9 @@ export default function Details(props) {
   // On success, shove the details of the friend in `details` slice of state
 
   useEffect(() => {
-// this runs after the first render for sure, and then after every second render + DOMSurgery
-  }, [])
+    // this runs after the first render for sure, and then after every second render + DOMSurgery
+    // caused by a change in friendID
+  }, []);
 
   return (
     <div className="container">
