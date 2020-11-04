@@ -17,7 +17,11 @@ export default function Details(props) {
   // and puts a 'click' event handler on document.
   // See what happens if we don't clean up.
 
-  useEffect()
+  useEffect(() => {
+    const sillyClickHandler = (evt) => {
+      console.log(``)
+    }
+  }, []);
 
   // TASK 6 - Create a side effect 🥵 that runs after every render.
 
