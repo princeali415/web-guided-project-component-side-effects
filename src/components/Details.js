@@ -17,6 +17,8 @@ export default function Details(props) {
   // and puts a 'click' event handler on document.
   // See what happens if we don't clean up.
 
+  useEffect()
+
   // TASK 6 - Create a side effect 🥵 that runs after every render.
 
   // TASK 7 - Create a side effect 📲 that runs when a particular variable changes:
