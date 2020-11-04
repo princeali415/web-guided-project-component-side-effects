@@ -45,15 +45,18 @@ export default function Details(props) {
   useEffect(() => {
     // this runs after the first render for sure, and then after every second render + DOMSurgery
     // caused by a change in friendID
-    axios
-      .get(`${BASE_URL}/friends/${friendId}?api_key=${API_KEY}`)
-      .then((res) => {
-        setDetails(res.data);
-      })
-      .catch((err) => {
-        debugger;
-      });
-  }, [friendId]);
+    const detailFetcher = () {
+      axios
+        .get(`${BASE_URL}/friends/${friendId}?api_key=${API_KEY}`)
+        .then((res) => {
+          setDetails(res.data);
+        })
+        .catch((err) => {
+          debugger;
+        });
+    }
+    }
+    , [friendId]);
 
   return (
     <div className="container">
