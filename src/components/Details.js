@@ -45,7 +45,7 @@ export default function Details(props) {
   useEffect(() => {
     // this runs after the first render for sure, and then after every second render + DOMSurgery
     // caused by a change in friendID
-  }, []);
+  }, [friendID]);
 
   return (
     <div className="container">
