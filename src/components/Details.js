@@ -48,7 +48,7 @@ export default function Details(props) {
     axios
       .get(`${BASE_URL}/friends/${friendId}?api_key=${API_KEY}`)
       .then((res) => {
-        console.log(res.data);
+        setDetails(res.data);
       })
       .catch((err) => {
         debugger;
